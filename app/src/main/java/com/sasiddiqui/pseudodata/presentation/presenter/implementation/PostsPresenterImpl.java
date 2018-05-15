@@ -53,18 +53,19 @@ public class PostsPresenterImpl extends AbstractPresenter implements
     }
 
     @Override
-    public void onError(String message) {
+    public void onError() {
+        viewCallback.onError();
+    }
 
+    @Override
+    public void getPosts() {
+        GetAllPosts postInteractor = new GetAllPostsImpl(mExecutor, mMainThread, this, postsRepository);
+        postInteractor.execute();
     }
 
     @Override
     public void onPostsRetrieved(List<Post> postList) {
         viewCallback.onHideProgress();
         viewCallback.onPostsRetrieved(postList);
-    }
-
-    private void getPosts() {
-        GetAllPosts postInteractor = new GetAllPostsImpl(mExecutor, mMainThread, this, postsRepository);
-        postInteractor.execute();
     }
 }

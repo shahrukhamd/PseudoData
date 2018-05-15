@@ -40,10 +40,6 @@ public class PostsRVAdapter extends RecyclerView.Adapter<PostsRVAdapter.ViewHold
         }
     }
 
-    public PostsRVAdapter(List<Post> postList) {
-        this.postList = postList;
-    }
-
     public void updateList(@NonNull List<Post> postList) {
         this.postList = postList;
         notifyDataSetChanged();
@@ -63,6 +59,6 @@ public class PostsRVAdapter extends RecyclerView.Adapter<PostsRVAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return postList.size();
+        return postList != null ? postList.size() : 0;
     }
 }

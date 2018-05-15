@@ -27,9 +27,7 @@ public interface BasePresenter {
     void destroy();
 
     /**
-     * Method that should be called in case of encountering an error with appropriate message.
-     *
-     * @param message The message describing that error.
+     * Method that should be called in case of encountering an error.
      */
-    void onError(String message);
+    void onError();
 }

@@ -1,5 +1,8 @@
 <resources>
+    <!--Common-->
     <string name="app_name">PseudoData</string>
+    <string name="message_some_error_occurred">Some error occurred</string>
+    <!--Common-->
 
     <!--Post list-->
     <string name="message_no_post">No posts to show.</string>

@@ -44,17 +44,17 @@ public class PostsRepositoryImpl implements PostsRepository {
                 }
             }
 
-            return postList;
-
         } catch (IOException e) {
             Timber.e(e);
-            return postList;
         }
+
+        return postList;
     }
 
     @Override
     public List<Comment> getPostComments(int postId) {
         List<Comment> commentList = new ArrayList<>();
+        // TODO Get the list from API.
         return commentList;
     }
 }

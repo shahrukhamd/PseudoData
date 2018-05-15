@@ -19,4 +19,9 @@ public interface PostsPresenter extends BasePresenter {
          */
         void onPostsRetrieved(List<Post> postList);
     }
+
+    /**
+     * Instruct the presenter to get the post list.
+     */
+    void getPosts();
 }
