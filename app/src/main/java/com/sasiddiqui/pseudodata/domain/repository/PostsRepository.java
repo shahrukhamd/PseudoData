@@ -1,5 +1,7 @@
 package com.sasiddiqui.pseudodata.domain.repository;
 
+import android.support.annotation.NonNull;
+
 import com.sasiddiqui.pseudodata.domain.model.Comment;
 import com.sasiddiqui.pseudodata.domain.model.Post;
 
@@ -15,6 +17,7 @@ public interface PostsRepository {
     /**
      * Get the list of {@link Post}.
      */
+    @NonNull
     List<Post> getPosts();
 
     /**

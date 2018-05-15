@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PseudoData</string>
+
+    <!--Post list-->
+    <string name="message_no_post">No posts to show.</string>
+    <string name="placeholder_post_title">sunt aut facere repellat provident occaecati excepturi optio reprehenderit</string>
+    <string name="placeholder_post_body">quia et suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</string>
+    <!--Post list-->
+
 </resources>

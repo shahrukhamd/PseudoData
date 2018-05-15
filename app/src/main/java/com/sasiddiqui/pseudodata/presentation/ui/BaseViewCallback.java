@@ -20,8 +20,6 @@ public interface BaseViewCallback {
 
     /**
      * This method will be used to show the error to the user with a message.
-     *
-     * @param message The message describing the error.
      */
-    void onError(String message);
+    void onError();
 }

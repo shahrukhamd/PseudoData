@@ -33,6 +33,7 @@ public class PostsPresenterImpl extends AbstractPresenter implements
 
     @Override
     public void resume() {
+        viewCallback.onShowProgress();
         getPosts();
     }
 
@@ -58,6 +59,7 @@ public class PostsPresenterImpl extends AbstractPresenter implements
 
     @Override
     public void onPostsRetrieved(List<Post> postList) {
+        viewCallback.onHideProgress();
         viewCallback.onPostsRetrieved(postList);
     }
 
