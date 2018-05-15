@@ -1,7 +1,9 @@
-package com.sasiddiqui.pseudodata;
+package com.sasiddiqui.pseudodata.presentation.ui.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.sasiddiqui.pseudodata.R;
 
 public class MainActivity extends AppCompatActivity {
 
