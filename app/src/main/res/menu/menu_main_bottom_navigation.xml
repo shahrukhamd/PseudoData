@@ -13,9 +13,9 @@
         android:enabled="true"
         app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/bottom_nav_todos"
-        android:icon="@drawable/ic_todos_white_24px"
-        android:title="@string/navigation_menu_todos"
+    <item android:id="@+id/bottom_nav_users"
+        android:icon="@drawable/ic_users_white_24px"
+        android:title="@string/navigation_menu_users"
         android:enabled="true"
         app:showAsAction="ifRoom"/>
 </menu>

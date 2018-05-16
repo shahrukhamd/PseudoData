@@ -8,9 +8,12 @@
 
     <FrameLayout
         android:id="@+id/main_fragment_container"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/main_bottom_navigation_bar" />
+        app:layout_constraintBottom_toTopOf="@+id/main_bottom_navigation_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/main_bottom_navigation_bar"
@@ -18,7 +21,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@color/colorPrimary"
-        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemIconTint="@drawable/selector_nav_item_color_state"
         app:itemTextColor="@color/white"
         app:menu="@menu/menu_main_bottom_navigation" />
 
