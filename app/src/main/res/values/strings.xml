@@ -10,4 +10,11 @@
     <string name="placeholder_post_body">quia et suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto</string>
     <!--Post list-->
 
+    <!--Main navigation bar-->
+    <string name="navigation_menu_posts">Posts</string>
+    <string name="navigation_menu_todos">Todos</string>
+    <string name="navigation_menu_albums">Albums</string>
+    <string name="navigation_menu_users">Users</string>
+    <!--Main navigation bar-->
+
 </resources>

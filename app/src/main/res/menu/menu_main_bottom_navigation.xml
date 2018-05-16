@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/bottom_nav_posts"
+        android:icon="@drawable/ic_posts_white_24px"
+        android:title="@string/navigation_menu_posts"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/bottom_nav_albums"
+        android:icon="@drawable/ic_photo_album_white_24px"
+        android:title="@string/navigation_menu_albums"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/bottom_nav_todos"
+        android:icon="@drawable/ic_todos_white_24px"
+        android:title="@string/navigation_menu_todos"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+</menu>
