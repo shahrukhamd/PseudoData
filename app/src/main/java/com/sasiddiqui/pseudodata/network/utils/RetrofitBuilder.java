@@ -16,6 +16,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitBuilder {
 
     public static Retrofit getRetrofit() {
+
+        return new Retrofit.Builder()
+                .baseUrl(APIConstants.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(getLogInterceptorClient())
+                .build();
+    }
+
+    public static OkHttpClient getLogInterceptorClient() {
         OkHttpClient.Builder clientBuilder = new OkHttpClient.Builder();
 
         if (BuildConfig.DEBUG) {    //Enable API logs in debug mode
@@ -24,10 +33,6 @@ public class RetrofitBuilder {
             clientBuilder.addInterceptor(interceptor);
         }
 
-        return new Retrofit.Builder()
-                .baseUrl(APIConstants.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(clientBuilder.build())
-                .build();
+        return clientBuilder.build();
     }
 }

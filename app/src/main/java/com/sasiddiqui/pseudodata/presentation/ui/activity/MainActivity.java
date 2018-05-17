@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.sasiddiqui.pseudodata.R;
-import com.sasiddiqui.pseudodata.presentation.ui.fragment.AlbumListFragment;
+import com.sasiddiqui.pseudodata.presentation.ui.fragment.TodoListFragment;
 import com.sasiddiqui.pseudodata.presentation.ui.fragment.PostListFragment;
 import com.sasiddiqui.pseudodata.presentation.ui.fragment.UserListFragment;
 
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.main_fragment_container, new PostListFragment())
                 .commit();
 
-        // TODO Replace all these hacks with proper MVP design.
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -47,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
                                 .commit();
                         return true;
 
-                    case R.id.bottom_nav_albums:
-                        if (selectedItem == R.id.bottom_nav_albums) return false;
+                    case R.id.bottom_nav_todos:
+                        if (selectedItem == R.id.bottom_nav_todos) return false;
                         fragmentManager.beginTransaction()
-                                .replace(R.id.main_fragment_container, new AlbumListFragment())
+                                .replace(R.id.main_fragment_container, new TodoListFragment())
                                 .commit();
                         return true;
 
