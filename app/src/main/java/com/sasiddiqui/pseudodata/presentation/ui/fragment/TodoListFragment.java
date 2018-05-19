@@ -88,17 +88,18 @@ public class TodoListFragment extends Fragment implements SwipeRefreshLayout.OnR
             public void onNext(List<Todo> todoList) {
                 adapter.updateList(todoList);
 
-                swipeRefreshLayout.setRefreshing(false);
                 helpTextView.setVisibility(todoList.size() > 0 ? View.GONE : View.VISIBLE);
             }
 
             @Override
             public void onError(Throwable e) {
+                swipeRefreshLayout.setRefreshing(false);
                 Timber.e(e);
             }
 
             @Override
             public void onComplete() {
+                swipeRefreshLayout.setRefreshing(false);
                 Timber.d("Observer Completed");
             }
         };

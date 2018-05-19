@@ -12,6 +12,7 @@
     <string name="navigation_menu_todos">Todos</string>
     <string name="navigation_menu_albums">Albums</string>
     <string name="navigation_menu_users">Users</string>
+    <string name="navigation_menu_photos">Photos</string>
     <!--Main navigation bar-->
 
 </resources>

@@ -30,7 +30,7 @@ public class TodosRVAdapter extends RecyclerView.Adapter<TodosRVAdapter.ViewHold
         @BindView(R.id.todo_list_item_title)
         TextView todoText;
 
-        public ViewHolder(View itemView) {
+        ViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
