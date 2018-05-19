@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import com.sasiddiqui.pseudodata.R;
 import com.sasiddiqui.pseudodata.presentation.ui.fragment.TodoListFragment;
 import com.sasiddiqui.pseudodata.presentation.ui.fragment.PostListFragment;
-import com.sasiddiqui.pseudodata.presentation.ui.fragment.UserListFragment;
+import com.sasiddiqui.pseudodata.presentation.ui.fragment.PhotoListFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.bottom_nav_users:
                         if (selectedItem == R.id.bottom_nav_users) return false;
                         fragmentManager.beginTransaction()
-                                .replace(R.id.main_fragment_container, new UserListFragment())
+                                .replace(R.id.main_fragment_container, new PhotoListFragment())
                                 .commit();
                         return true;
                 }

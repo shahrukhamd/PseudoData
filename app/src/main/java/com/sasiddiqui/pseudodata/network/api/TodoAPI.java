@@ -9,6 +9,8 @@ import retrofit2.http.GET;
 
 /**
  * Created by shahrukhamd on 17/05/18.
+ *
+ * An interface for API call via {@link retrofit2.Retrofit}.
  */
 public interface TodoAPI {
     @GET("todos")

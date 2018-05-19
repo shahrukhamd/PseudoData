@@ -5,19 +5,19 @@
     android:layout_height="match_parent">
 
     <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/todo_list_swipe_refresh_layout"
+        android:id="@+id/photo_list_swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/todo_list_recycler_view"
+            android:id="@+id/photo_list_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
     <TextView
-        android:id="@+id/todo_list_help_text"
+        android:id="@+id/photo_list_help_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/message_nothing_to_show"

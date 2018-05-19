@@ -29,7 +29,7 @@
         <item name="android:alpha">0.12</item>
     </style>
 
-    <style name="PostListItemTitle" parent="@android:style/TextAppearance">
+    <style name="ListItemTitle" parent="@android:style/TextAppearance">
         <item name="android:textSize">@dimen/text_normal</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:alpha">0.87</item>
@@ -40,7 +40,7 @@
         <item name="android:layout_margin">@dimen/margin_small</item>
     </style>
 
-    <style name="PostListItemBody" parent="@android:style/TextAppearance">
+    <style name="ListItemBody" parent="@android:style/TextAppearance">
         <item name="android:textSize">@dimen/text_small</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:alpha">0.87</item>

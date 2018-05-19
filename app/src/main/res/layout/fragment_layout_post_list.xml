@@ -20,7 +20,7 @@
         android:id="@+id/post_list_help_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/message_no_post"
+        android:text="@string/message_nothing_to_show"
         style="@style/EmptyScreenHelpText"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

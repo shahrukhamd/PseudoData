@@ -10,21 +10,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/img_placeholder_600px"
+            android:scaleType="centerCrop" />
+
         <TextView
-            android:id="@+id/post_list_item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/dummy_text_small"
-            style="@style/ListItemTitle"/>
-
-        <View style="@style/DividerViewDark" />
-
-        <TextView
-            android:id="@+id/post_list_item_body"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="@string/dummy_text_full"
-            style="@style/ListItemBody"/>
+            style="@style/ListItemTitle"
+            android:gravity="center_horizontal"/>
 
     </LinearLayout>
 
