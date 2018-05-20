@@ -18,11 +18,11 @@ A sample Android project using the pseudo data from https://jsonplaceholder.typi
 
 
 # About
-The project is about the demonstration of **MVP architecture** and usage of some popular libraries.
+The project is about the demonstration of [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) by [Uncle Bob](https://en.wikipedia.org/wiki/Robert_C._Martin) and usage of some popular libraries.
 
 The app is **divided into different fragments**, each of which uses a different approach to solve the same problem (fetch, parse and show the data from an API).
 
-- [PostListFragment](https://github.com/shahrukhamd/PseudoData/blob/master/app/src/main/java/com/sasiddiqui/pseudodata/presentation/ui/fragment/PostListFragment.java) is about the demonstration of **MVP (Model-View-Presenter) clean-architecture** which decouple code into different easy-to-manage layers thereby improving code **flexibility and greatly reducing maintenance time**.
+- [PostListFragment](https://github.com/shahrukhamd/PseudoData/blob/master/app/src/main/java/com/sasiddiqui/pseudodata/presentation/ui/fragment/PostListFragment.java) is about the demonstration of **MVP (Model-View-Presenter)** which decouple code into different easy-to-manage layers thereby improving code **flexibility and greatly reducing maintenance time**.
 
 - [TodoListFragment](https://github.com/shahrukhamd/PseudoData/blob/master/app/src/main/java/com/sasiddiqui/pseudodata/presentation/ui/fragment/TodoListFragment.java) is just about the usage of some **reactive programming with RxJava2**. It uses **Retrofit2 coupled with RxJava2** and consumes the data from an API.
 
